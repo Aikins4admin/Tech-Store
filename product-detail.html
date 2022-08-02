@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech Store: Product Details</title>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+        <!-- TO-DO LIST
+            1/  Create shop
+            2/ Add CSS styling
+        -->
+        <header>
+            <h1>Tech Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="contact.html">Contact US</a></li>
+                </ul>
+            </nav>
+
+                <input type="search" placeholder="search...">
+                <!--
+                    Note the input type above
+                -->
+
+        </header>
+
+        <aside>
+            <h2>Shop by:</h2>
+            <section>
+                <h3>Category</h3>
+                <hr>
+                <ul>
+                    <li>All Items</li>
+                    <li>Cameras</li>
+                    <li>Laptops</li>
+                    <li>Phones</li>
+                    <li>Accessories</li>
+                    <li>Other</li>
+                </ul>
+            </section>  
+            <section>
+                <h3>Price <span>($)</span></h3>
+                <hr>
+                <ul>
+                    <li>1 - 9</li>
+                    <li>10 - 29</li>
+                    <li>30 - 59</li>
+                    <li>60 - 99</li>
+                    <li>100 + </li>
+                </ul>
+            </section>  
+        </aside>
+            <!-- Comments Main Section to display products-->
+        <main>
+            <h2>Product detail:</h2>
+            <div class="product product-detail">
+                <a href="product-detail.html">
+                    <img src="images/controller.jpg" alt="game controller picture">
+                </a>
+                <h4><a href="product-detail.html"> Game Controller</a> &#127918;</h4> 
+                <p>$79.95</p>
+                <p>Awesome game controller <br> for xbox!</p>
+                <a href="product-detail.html" class="button">More Info</a>
+                <a href=""class="button">Add To Cart</a>
+            </div>
+            
+            <div>
+                <table>
+                    <caption>Buy in bulk and save!</caption>
+                <thead>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>1</th>
+                        <th>2-3</th>
+                        <th>5-10</th>
+                        <th>10+</th>
+                    </tr>
+                </thead>
+                            <!--
+                                <th> means table head for the headings in a table
+                                <td> means table data to fill in the table contents
+                                <tr> means table row. It is the parent element for <th>/<td>
+                                <table> is the parent element for <tr>
+
+                            -->
+                <tbody>
+                    <tr>
+                        <td>Price</td>
+                        <td>79.95</td>
+                        <td>78.95</td>
+                        <td>76.95</td>
+                        <td>74.95</td>
+                    </tr>
+                </tbody>
+
+                </table>
+            </div> 
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,232 @@
+html {
+    background: #f7f7f7;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;      
+    background: white;
+    max-width: 80vw;
+    margin: auto;
+    color: rgb(49, 46, 46);
+}
+
+header, footer{
+    background: #333a40;
+    color: white;
+    padding: 20px 10px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #0e69e9;
+}
+/* 
+below is for bulleting li elements. If you go for "none' as demonstrated above, 
+there will be no bulletin points
+
+li {
+    list-style: circle inside;
+} */ 
+
+
+/* li {
+    display: inline;
+} */
+
+    /* this setting arranges all <li> elements to "in-line" order.this includes regular list
+    and navigational links. But thankfully you can be more specific like adding the location of 
+    where you'd like to see the change. As done below! */
+
+header li {
+    display: inline;
+}
+
+header h1, nav{
+    display: inline-block;
+} 
+
+header h1 {
+    width: 60%;
+}
+
+main {
+    /* target divided by context = result */
+    /* eg. 680/1000=0.68 */
+    width: 68%;
+    display: inline-block;
+    padding: 10px;
+}
+
+aside {
+    width: 27%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+/* the total of the main and aside width must total 1000px as stated in the max-width above in the 
+body section */
+
+
+/* 
+#email, #name, #message{
+    background: rgb(0, 255, 21);
+} 
+The above is tagging id attribute using css. NB: an id  must be unique hence, appear once on a page.
+Also, when tagging id for css, begin with # followed by the id reference. ie.  id="name" will be 
+#name{
+    background: blue;
+}
+
+or ie. id="message will  be
+#message{
+    background: pink;
+}
+    NB; when deciding a name of id, dont begin that name  with a number (eg.4sure)
+         
+        #4sure{
+            background:  white;
+        }
+        Css will register this as error because it begins with a number.
+
+        WHILE ID IS UNIQUE AND SHOULD NOT BE REPEATED, CLASS CAN BE APPLIED TO MULTIPLE AREAS.
+        In events such as this(multiple application) use class instead.
+
+*/
+.product {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    width: 30%;
+    /* overflow: hidden; */
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+}
+/* Below algns the images in the website to the above (.product) settings. */
+img{
+    max-width: 100%;
+}
+
+.button {
+    padding: 10px;
+    display: inline-block;
+}
+
+/* below are some examples of psuedo classes */
+/* p:first-of-type {
+    color:  red;
+} */
+
+/* p:last-of-type {
+    color:  red;
+} */
+
+/* li:first-of-type {
+    color:  red;
+} */
+
+/* li:nth-of-type (3) {
+    color:  red;
+} */
+
+.button:last-of-type {
+    background: #0e69e9;
+    color: white;
+}
+
+
+/* Product Detail page */
+
+.product-detail {
+    width: 660px;
+}
+
+.product-detail img {
+    max-width: 50%;
+    float: left;
+    margin-right: 10px ;
+}
+
+/* Contact Us */
+
+form {
+    padding: 10px;
+    margin: 10px 0;
+    width: 600px;
+}
+
+form > div {
+    margin: 10px 0;
+}
+
+.inline label {
+    width: 100px;
+    display: inline-block;
+
+}
+
+input [type=""], [type="email"], [type="text"], textarea {
+    padding: 10px;
+    width: 400px;
+}
+
+
+/* table */
+
+table {
+    width: 400px;
+    text-align: left;
+    margin: 20px, 0;
+}
+
+caption{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px dotted;
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:hover {
+    background: #f5f5f5;
+}
+
+/* celow deals with specificity and cascading Ep.47 
+    Basically the idea is to know how to calculate what each each element
+    is worth and it's total worth is the property css will  read*/
+
+/* 0001 */
+    /* h1 {
+    color: red;
+    text-decoration: underline;
+} */
+
+/* 0002 */
+/* header h1 {
+    color: purple !important; 
+} */
+
+/* @media (min-width: 600px) and (max-width: 700px) {
+    li{
+        color: red;
+    }
+} */
+
+
